@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대입연산자</title>
+</head>
+<body>
+        <table border="1">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+        </table>
+
+    
+     <script>
+        // 대입연산자 종류
+        // a = b : a = b
+        // a += b : a = a + b 더한것을 대입
+        // a -= b : a = a - b 뺀 것을 대입
+        // a *= b : a = a * b 곱한것을 대입
+        // a /= b : a = a / b 나눈것을 대입
+        // a %= b : a = a % b 나머지를 대입
+
+
+        let a = 10;
+        let b = 3;
+
+        a += b;
+        console.log(a);
+        // 획인 방법 검사에 들어가서 콘솔에 들어가야함` 
+
+        a -= b;
+        console.log(a);
+
+        // 빼기 부분에서 10 된 이유는 앞에서 더하기 값인 13이된 a애 -3(b)을 한거임
+
+        a *= b;
+        console.log(a);
+
+        a /= b;
+        console.log(a);
+
+        a %= b;
+        console.log(a);
+
+
+        let table = "<table border='1'>";
+            table += "<tr>";
+            table += "<td>1</td><td>2</td><td>3</td>";
+            table += "</tr>";
+            table += "</table>";
+
+            document.write(table);
+     </script>
+</body>
+</html>
