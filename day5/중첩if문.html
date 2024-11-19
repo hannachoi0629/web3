@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩if문</title>
+</head>
+<body>
+    <script>
+        /*
+        if(조건식1){
+            if(조건식2){
+                자바스크립트 코드 
+            }
+        } else {
+         조건식 2의 조건이 맞지 않을 때 
+        } else {
+        조건1이 맞지 않을때 
+        }
+
+        */
+
+        let userId = "hanna";
+        let serPw = "123";
+
+        let inputId = prompt("아이디를 입력해주세요");
+        let inputPw = prompt("비밀번홍ㅇ를 입력해주세요");
+
+        if(userId == inputId){
+            if(serPw == inputPw){
+                document.write(userId + "님 반갑소");
+            }else {
+                alert("비밀번호가 일치하지 않습니다");
+            }
+        } else {
+            alert("아이디가 일치하지않숩니다")
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복합조건2</title>
+</head>
+
+<body>
+    <script>
+        //조건
+        /*
+        1.사용자의 나이를 입력받기,신분증 유무를 확인하기 
+        2. 사용자의 나이가 20살이 넘고, 신분증이 있다면 입장가능
+        3.사용자의 나이가 18살이 넘고 20세 미만인 사람이 신분증이 있다면
+        입장이 가능하지만 12시에 퇴장
+        4.18세 미만, 신분증이 없는 고객은 입장이 불가능하다고 알리기
+        이와의 값을 입력하면 관리자에게 문의하세요 풀력
+        ==============
+
+        confirm을 사용해서 신분증의 유무를 확인박을 것
+        && 연산자와 || 연산자를 활용할 것
+        */
+
+
+        let userAge = prompt("나이를입력");
+        let idCard = confirm("신분증은요?");
+
+        if (userAge = 20 && idCard) {
+            document.write(userAge + "살! 신분증 확인 환료 ");
+        } else if (userAge >= 18 && userAge < 20 && idCard) {
+            document.write(userAge + "살! 신분등확인 완료 그치만 12시 퇴장요함");
+        } 
+        </script>
+    
+</body>
+</html>
