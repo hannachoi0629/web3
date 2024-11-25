@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배수글자색예제</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+        .apua {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        //조건
+        //1.for문을 이용하여 1부터 100까지 풀력한다
+        //2.if문을 사용해서 5의 배수일경우만 출력하는데 글자의 색은 빨간생이다
+        //3.  배구 7일 경우도 출력하는데 글자색은 초록색으로 출력
+        //4. 5의 배수이며, 7의 배수일 경우는 아쿠아색을 출력하기
+        //<p class= 'apua'> 내용입력 </p>
+// ! = not
+
+
+    for(let i = 1; i <= 100;i++){
+        if(i % 5 == 0 && i % 7 != 0){
+
+            document.write("<p class='red'>"+ i +"</p>");
+
+        } else if (i % 7 == 0 && i % 5 != 0){
+
+            document.write("<p class='green'>"+ i +"</p>");
+        } else if ( i % 7 == 0 && i % 5 == 0){
+
+            document.write("<p class='apua'>"+ i +"</p>");
+
+        }
+    }
+
+
+    </script>
+
+
+</body>
+</html>
